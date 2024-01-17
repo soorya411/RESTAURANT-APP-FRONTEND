@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import RestOp from './RestOp';
 import RestReview from './RestReview';
-
+import  Container  from 'react-bootstrap/Container';
 function ViewRest() {
 
   const [restDetails,setRestDetails]=useState({})
@@ -35,9 +35,11 @@ function ViewRest() {
   },[])
   return (
     <div>
-      <Row>
-        <Col>
-        <img src={restDetails.photograph} alt="" style={{width:'550px',height:'600px',margin:'40px'}} />
+       <Container fluid>
+      <Row className='row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2' style={{backgroundColor:'black'}}>
+       
+        <Col className=''>
+        <img src={restDetails.photograph} alt="" className='img-fluid' style={{width:'650px',height:'550px',objectFit:'cover'}} />
         </Col>
       
         <Col>
@@ -54,6 +56,7 @@ function ViewRest() {
     </div>
         </Col>
       </Row>
+      </Container>
     </div>
   )
 }

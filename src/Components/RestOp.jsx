@@ -13,8 +13,8 @@ function RestOp({op}) {
     console.log(op);
   return (
     <div>
-      <Button variant="dark" style={{color:'white',fontSize:'14px'}} onClick={handleShow}>
-        Operating Hours
+      <Button variant="dark" style={{color:'white',fontSize:'14px',width:'100%',borderRadius:'0px'}} onClick={handleShow}>
+        Operating Hours <i class="fa-solid fa-play fa-beat" style={{color: '#74C0FC',backgroundColor:'transparent'}}></i>
       </Button>
 
       <Modal

@@ -4,24 +4,22 @@ import {
     MDBNavbar,
     MDBNavbarBrand
   } from 'mdb-react-ui-kit';
-  
+  import titleimage from '../Assets/img.PNG'
 
 function Header() {
   return (
 
-    <div> <MDBNavbar light bgColor='light'>
+     <div style={{backgroundColor:'black',color:'white'}}>
+       <MDBNavbar>
     <MDBContainer fluid >
       <MDBNavbarBrand href=''>
-        <img
-          src='https://img.freepik.com/free-vector/detailed-chef-logo-template_23-2148987940.jpg?size=626&ext=jpg&ga=GA1.1.1046592881.1689925740&semt=ais'
-          height='50'
-          alt=''
-          loading='lazy'
-        />
-        RestoCafe
+
+        <img src={titleimage} alt="" style={{height:'50px'}}/>
+      <h4 style={{color:'white'}}>  RestoCafe</h4>
       </MDBNavbarBrand>
     </MDBContainer>
-  </MDBNavbar></div>
+  </MDBNavbar>
+  </div>
 
   )
 }

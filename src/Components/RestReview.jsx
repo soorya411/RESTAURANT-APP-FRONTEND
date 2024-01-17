@@ -12,8 +12,8 @@ function RestReview({ rw }) { //array
     return (
 <div>
        
-            <Button variant="dark" style={{ color: 'white',fontSize:'14px' }} onClick={handleShow}>
-                Reviews
+            <Button variant="dark" style={{ color: 'white',fontSize:'14px',width:'100%',borderRadius:'0px' }} onClick={handleShow}>
+                Reviews <i class="fa-solid fa-play fa-beat" style={{color: '#74C0FC',backgroundColor:'transparent'}}></i>
             </Button>
 
             <Offcanvas show={show} onHide={handleClose} backdrop="static">
@@ -25,10 +25,12 @@ function RestReview({ rw }) { //array
                  
                         {rw?.map(item => (
                             <div>
- <h6>{item.name}</h6>
- <p>{item.date}</p>
- <p>{item.rating}</p>
- <p>{item.comments}</p>
+ <h6 style={{color:'green'}}>{item.name}</h6>
+ <p style={{fontSize:'13px'}}>{item.date}</p>
+
+ <p>{item.rating} <i class="fa-solid fa-star" style={{color: 'gold'}}></i></p>
+ <p style={{fontSize:'15px',fontFamily:'sans-serif',fontWeight:'lighter',textAlign:'justify'}}>{item.comments}</p>
+ <p style={{color:'red',alignItems:'center'}}>-----------------------------------------------</p>
                             </div>
                            
                 

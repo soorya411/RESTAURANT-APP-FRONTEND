@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 function RestCard({ restaurant }) {
   console.log(restaurant);
   return (
-    <div>
+    <div >
       <Link to={`view/${restaurant.id}`} style={{textDecoration:'none'}}>
       <MDBCard className='my-4 mx-3' style={{ height: '500px' }}>
         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
