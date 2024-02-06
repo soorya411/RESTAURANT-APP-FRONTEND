@@ -17,6 +17,7 @@ function RestCard({ restaurant }) {
       <Link to={`view/${restaurant.id}`} style={{textDecoration:'none'}}>
       <MDBCard className='my-4 mx-3' style={{ height: '500px',backgroundColor:'black' }}>
         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
+          
           <MDBCardImage src={restaurant.photograph} height={'350px'} position='top' alt='...' />
           <a>
             <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
